@@ -13,6 +13,41 @@ body{
   border-radius:6px;
   opacity: .9;
 }
+footer{
+  max-width: 1440px;
+  margin: 25px auto;
+  padding: 0 25px;
+  .footer{
+font-size: 1vw;
+    .logo{
+      font-weight: 800;
+    }
+    .copyright{
+      text-align: center;
+
+      img{
+        width: 10px;
+      }
+    }
+    .media{
+      border: 1px solid lightgrey;
+      border-radius: 5px;
+      img{
+        width: 15px;
+        height:15px;
+        margin: 10px;
+      }
+
+    }
+    .media a{
+      border-right: 1px solid lightgrey;
+    }
+    .media a:last-child{
+      border-right: none;
+    }
+
+  }
+}
 @media only screen and (max-width: 768px) {
   .container-top__content{
     flex-direction: column;
@@ -34,5 +69,8 @@ body{
       }
     }
 
+  }
+  .copyright{
+    margin: 20px 0;
   }
 }
