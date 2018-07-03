@@ -1,0 +1,41 @@
+.container-3{
+  min-height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  @include e(item){
+    margin: 30px;
+    width:50%;
+    padding: 30px;
+    @include m(box){
+      .icon-box{
+        width: 50px;
+      }
+      .box_content{
+        text-align: left;
+        margin-left: 20px;
+        width: 70%;
+      }
+    }
+  }
+}
+.banner{
+
+  min-height: 280px;
+  max-width: 1440px;
+  color:$white;
+  @include e(item){
+    text-align: left;
+    margin-left: 10%;
+    width: 50%;
+    .btn1{
+
+    }
+  @include m(title){
+    font-size: 2vw;
+    padding-bottom: 1em;
+  }
+    @include m(description){
+      font-size: 1vw;
+    }
+  }
+}

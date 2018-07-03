@@ -1,0 +1,41 @@
+.article{
+  max-width: 1440px;
+  background-color: #f8f9fa;
+
+  .section{
+    max-width: 80%;
+    margin: 0 auto;
+    @include e(image){
+      background: url(#{$imgPath}Background.png)no-repeat;
+      overflow: hidden;
+      text-align: center;
+      img{
+        max-width: 69%;
+        margin-top: 17%;
+        margin-bottom: -30%;
+      }
+    }
+    @include e(description){
+      background-color: $white;
+      text-align: center;
+      //margin:10%;
+      @include m(title){
+        font-size: 2vw;
+        padding-bottom: 1em;
+        max-width: 56%;
+      }
+      @include m(text){
+        max-width: 67%;
+        font-size: 1.5vw;
+
+      }
+    }
+  }
+}
+/*
+.article :first-child{
+  padding-top: 8%;
+}
+.article :nth-child(2){
+  padding-bottom: 8%;
+}*/

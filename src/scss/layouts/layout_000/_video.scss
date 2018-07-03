@@ -1,0 +1,19 @@
+.video{
+min-height: 50vh;
+  color: $white;
+  background: url(#{$imgPath}bg2.png)no-repeat;
+  background-size:  cover;
+  text-align: center;
+  @include e(title){
+    font-size: 2vw;
+  }
+  @include e(text){
+    font-size: 1vw;
+    max-width: 40%;
+    margin: 1em auto;
+  }
+  @include e(play-btn){
+    max-width: 70px;
+    margin-top: 4%;
+  }
+}
