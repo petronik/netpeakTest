@@ -2,8 +2,14 @@ body{
   font-family: $fontFamily;
 }
 .btn1{
+   color:$white;
+   background: linear-gradient(to right, #ff8e64, #ffe641);
+   border-radius:6px;
+   opacity: .9;
+ }
+.btn2{
   color:$white;
-  background: linear-gradient(to right, #ff8e64, #ffe641);
+  background: linear-gradient(to right, #009fc5, #3cecb0);
   border-radius:6px;
   opacity: .9;
 }

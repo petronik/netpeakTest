@@ -1,0 +1,21 @@
+
+.rating{
+  //align-items: center;
+  margin-left:10px;
+  width: 37%;
+}
+.articles{
+  & :first-child{
+    margin-right:100px;
+  }
+  & :last-child {
+    margin-right: 100px;
+  }
+  & :nth-child(2) {
+    margin-left: 100px;
+  }
+
+  @include e(articles){
+    width: 62%;
+  }
+}

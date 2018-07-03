@@ -3,9 +3,8 @@
   min-height: 90vh;
   margin:0 auto;
   .rating{
-    width: 37%;
     text-align: left;
-    //box-shadow: 0 0 1px 2px lightgrey;
+
     @include e(stars){
       img{
         max-width: 16px;
@@ -34,25 +33,14 @@
     }
   }
   .articles{
-    width: 62%;
+
     background-color: #f8f9fa;
     /*& :first-child, & :last-child{
       margin-right: 100px;
     }
 
     }*/
-    & :first-child{
-      margin-right:100px;
-    }
-    & :last-child {
-      margin-right: 100px;
-    }
-    & :nth-child(2) {
-      margin-left: 100px;
-    }
-    hr{
-      margin:0;
-    }
+
     article{
 
       margin-top: 2%;
@@ -92,5 +80,14 @@
       }
     }
 
+  }
+}
+@media only screen and (max-width: 768px){
+  .rating{
+    align-items:center;
+    @include e(stars){
+      margin-right:12%;
+      flex-direction: row;
+    }
   }
 }

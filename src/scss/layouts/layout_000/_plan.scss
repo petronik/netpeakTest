@@ -1,0 +1,127 @@
+.plan{
+  max-width: 1440px;
+  background-color: #f8f9fa;
+  height: 90vh;
+  flex-direction: row;
+  align-items: center;
+
+  @include e(box){
+    h1{
+      font-size: 2.5vw;
+
+    }
+    p{
+      font-size: 1vw;
+      width:70%;
+
+    }
+  }
+  @include e(container){
+    height: 70%;
+
+
+    h2{
+      line-height: 3em;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: .8vw;
+      width: 100%;
+      margin-top:10px;
+
+
+      border-top: 1px solid #e7e8ea;
+      border-bottom: 1px solid #e7e8ea;
+    }
+    .banner1{
+      max-width: 300px;
+      border-radius:10px;
+      background: url(#{$imgPath}Background.png)no-repeat;
+      font-size: 1vw;
+      color:$white;
+      text-align: center;
+      transition: all .2s ease-in-out;
+      padding: 0;
+      margin-right: 10px;
+      margin-bottom: 20px;
+      p{
+        font-size: 3vw;
+      }
+      ul{
+        text-align: left;
+      }
+      button{
+        width: 80%;
+        font-size: 1.5vw;
+      }
+      ul li:before
+      {content:'\2713';
+        display:inline-block;
+        padding:0 7px 0 0;
+      }
+     }
+    .banner1:hover{
+      transform: scale(1.1);
+    }
+    .banner2{
+      max-width: 300px;
+      border-radius:10px;
+      font-size: 1vw;
+      text-align: center;
+      transition: all .2s ease-in-out;
+      padding: 0;
+      margin-left: 10px;
+      margin-bottom: 20px;
+      background-color: white;
+      h2{
+        background-color: #f8f9fa;
+      }
+      p{
+        font-size: 3vw;
+      }
+      ul{
+        text-align: left;
+      }
+      button{
+        width: 80%;
+        font-size: 1.5vw;
+      }
+      ul li:before
+      {content:'\2713';
+        display:inline-block;
+        padding:0 7px 0 0;
+      }
+    }
+    .banner2:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+@media only screen and(max-width:768px) {
+  .plan{
+    flex-direction: column;
+    align-items: center;
+    @include e(box){
+      h1{
+        font-size: 3.5vw;
+      }
+      p{
+        font-size: 2vw;
+        margin: 0 5%;
+        width:100%;
+      }
+    }
+  }
+}
+@media only screen and(max-width:640px){
+.plan__container{
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  .banner1,
+  .banner2{
+    margin: 10px auto;
+    width: 70%;
+    font-size: 2vw;
+  }
+}
+}
