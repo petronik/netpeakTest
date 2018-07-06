@@ -6,15 +6,7 @@
 .navbar{
   flex-direction: row;
 }
-.burger{
-  //position: relative;
-  transition: .8s;
-  cursor: pointer;
-}
-.burger:hover{
-  background: grey;
-  transform: rotate(360deg);
-}
+
 .toggle-menu{
   flex-direction: row;
 }

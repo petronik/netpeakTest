@@ -1,7 +1,7 @@
 .plan{
   max-width: 1440px;
   background-color: #f8f9fa;
-  height: 90vh;
+  min-height: 100vh;
   flex-direction: row;
   align-items: center;
 
@@ -17,7 +17,7 @@
     }
   }
   @include e(container){
-    height: 70%;
+    //height: 70%;
 
 
     h2{
@@ -52,6 +52,7 @@
       button{
         width: 80%;
         font-size: 1.5vw;
+        margin-bottom: 15px;
       }
       ul li:before
       {content:'\2713';
@@ -84,6 +85,7 @@
       button{
         width: 80%;
         font-size: 1.5vw;
+        margin-bottom: 15px;
       }
       ul li:before
       {content:'\2713';
@@ -119,8 +121,8 @@
   max-width: 70%;
   .banner1,
   .banner2{
-    margin: 10px auto;
-    width: 70%;
+    margin: 20px auto;
+    max-width: 70%;
     font-size: 2vw;
   }
 }

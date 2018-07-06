@@ -21,12 +21,20 @@ footer{
 font-size: 1vw;
     .logo{
       font-weight: 800;
+      cursor: pointer;
     }
     .copyright{
       text-align: center;
 
-      img{
+      .heart{
         width: 10px;
+        animation: heart 1s infinite;
+      }
+      @keyframes heart {
+        0%{transform: scale(1)}
+      100%{transform: scale(1.2)
+      }
+
       }
     }
     .media{

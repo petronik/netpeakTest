@@ -11,20 +11,18 @@
 <div class="container-fluid">
     <div class="container-top m-auto">
         <header class="header">
-            <a class="navbar-brand my-auto ml-1 h1" href="">AppStarter</a>
+            <a class="navbar-brand" href="#">AppStarter</a>
             <nav class="navbar">
-
-                <div class="toggle-menu">
+                <div class="toggle-menu" id="toggle-menu">
                     <a href="#" class="nav-item nav-link">Features</a>
                     <a href="#" class="nav-item nav-link">Video Tour</a>
                     <a href="#" class="nav-item nav-link">Reviews</a>
                     <a href="#" class="nav-item nav-link">Pricing</a>
-                    <button class="btn btn-light">get it free</button>
+                    <button class="btn btn-light nav-link">get it free</button>
                 </div>
-                <div class="burger" id="toggle-btn">
-                    <span class="span"></span>
-                </div>
+                <a href="#" class="menu-btn"><span></span></a>
             </nav>
+
         </header>
         <div class="container-top__content">
             <div class="container-top__content_item">
@@ -140,7 +138,11 @@
             nothing, but set off at once toward the Red Queen. To her surprise, 
             she lost sight of her in a moment, and found herself walking.
         </p>
-        <img class="video__play-btn" src="i/001-play-button.svg" alt="play-button">
+        <div class="circle">
+            <svg height="70" width="70" style="fill:#ffa500">
+               <polygon points="20 20, 60 35, 20 50"/>
+            </svg>
+        </div>
     </div>
     <div class="blog m-auto d-flex flex-column flex-md-row">
         <div class="rating d-flex flex-column align-items-md-start justify-content-md-around">
@@ -269,9 +271,9 @@
     </div>
     <footer>
         <div class="footer d-flex flex-md-row flex-column justify-content-md-around align-items-center">
-            <div class="logo">AppStarter</div>
+            <a class="logo">AppStarter</a>
             <div class="copyright">
-                <p>Created with <span><img src="i/003-heart.svg" alt="heart"></span> by <b>Sergey Azovsky</b></p>
+                <p>Created with <span><img class="heart" src="i/003-heart.svg" alt="heart"></span> by <b>Sergey Azovsky</b></p>
                 <p>&#169; AppStarter, 2017</p>
             </div>
             <div class="media">

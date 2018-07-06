@@ -13,8 +13,34 @@ min-height: 50vh;
     max-width: 40%;
     margin: 1em auto;
   }
-  @include e(play-btn){
-    max-width: 70px;
-    margin-top: 4%;
+  .circle{
+    width: 70px;
+    height: 70px;
+    border:1px solid $white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 10px;
+
+
+
+    .play-btn{
+      background-color: red;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      //max-width: 70px;
+      cursor: pointer;
+      vertical-align: center;
+
+    }
   }
+  .circle:hover{
+    animation: grow 1s infinite;
+  }
+}
+@keyframes grow {
+  0% {transform: scale(1)}
+  100% {transform: scale(1.3)}
+
 }
