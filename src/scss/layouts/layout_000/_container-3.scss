@@ -2,19 +2,32 @@
   max-width: 1440px;
   background-color: #f8f9fa;
   @include e(item){
+
     @include m(box) {
       padding: 15px;
-
+      cursor: pointer;
     }
     .container-3__item_box:hover {
       background-color: $white;
       border-radius: 10px;
-      box-shadow: 0 1px 1px 1px #eaebec;
+      box-shadow: -20px 20px 5px 1px #eaebec;
       padding: 15px;
-      transition: .8s;
+      transition: .5s;
+      transform: translateZ(20px);
     }
   }
-
+}
+.item1{
+  transition: 1s;
+  transform: rotateX(30deg) rotateZ(-30deg) rotateY(30deg);
+  transform-style: preserve-3d;
+}
+.item1-origin{
+  transform: rotate(0);
+  .container-3__item_box:hover{
+    box-shadow: 0 1px 1px 1px #eaebec;
+    transform: scale(1.1);
+  }
 }
 .banner{
   background: url(#{$imgPath}Background.png)no-repeat;

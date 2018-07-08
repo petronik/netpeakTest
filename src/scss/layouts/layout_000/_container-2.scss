@@ -34,8 +34,8 @@
           display: inline-block;
           margin: 25%;
           width: 50%;
-
         }
+
 
       }
       .box-description{
@@ -51,6 +51,23 @@
         font-size: 1.4vw;
       }
     }
+  }
+}
+.box-icon:hover{
+  transition: .5s;
+  transform: scale(1.1);
+}
+.box-icon:hover img{
+  transition: 1s;
+
+  animation: rotation 2s;
+}
+@keyframes rotation {
+  0%{
+    transform: rotateZ(0);
+  }
+  100%{
+    transform: rotateZ(-360deg);
   }
 }
 @media only screen and (max-width: 768px){
