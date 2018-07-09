@@ -65,25 +65,31 @@
 
       .toggle-menu{
         display: flex;
-        a {
-          color: $white;
-        }
+        transition: 0.5s;
+        transform: scaleX(0) translateX(0%);
+        transform-origin: right;
+
+      }
+      .toggle-menu_active{
+        transform: scaleX(1) translateX(0%);
       }
 
       button{
+
         font-weight: 800;
         text-transform: uppercase;
         margin: 0 15px;
       }
     }
     .nav-link{
-      transition: 0.5s;
+      color: $white;
+      /*transition: 0.5s;
       transform: scaleX(0) translateX(0%);
-      transform-origin: right;
+      transform-origin: right;*/
     }
-    .nav-link_active{
+    /*.nav-link_active{
       transform: scaleX(1) translateX(0%);
-    }
+    }*/
 
   }
   @include e(content){
