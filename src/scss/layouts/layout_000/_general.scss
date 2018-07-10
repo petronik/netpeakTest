@@ -8,20 +8,6 @@ body{
    opacity: .9;
   position: relative;
  }
-/*.btn1:before{
-    //content: attr(data-text);
-    position:absolute;
-
-  //margin:0 -10px;
-    background:linear-gradient(90deg, #d630f2, #ff002f, #e4ff00, #03a9f4, #d630f2);
-    background-size:300%;
-    overflow:hidden;
-    transition:width 2s;
-    animation: animate 5s linear infinite;
-    width:0;
-    -webkit-background-clip: border;
-
-  }*/
 .btn1:hover{
   background: linear-gradient(to right, #ff8e64, #ffe641);
   background-size: 200% 200%;
